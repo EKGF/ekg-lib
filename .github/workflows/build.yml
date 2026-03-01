@@ -58,7 +58,7 @@ jobs:
             --tb=short
 
       - name: Upload pytest test results
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: test-results-${{ matrix.python_version }}
           path: test-results-${{ matrix.python_version }}.html
